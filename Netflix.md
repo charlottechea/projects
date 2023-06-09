@@ -63,11 +63,6 @@ def test_movie_dict_dict():
 
 
 
-    3/3 tests passed
-
-
-
-
 ## 2. Creating a DataFrame from a dictionary
 <p>To convert our dictionary <code>movie_dict</code> to a <code>pandas</code> DataFrame, we will first need to import the library under its usual alias. We'll also want to inspect our DataFrame to ensure it was created correctly. Let's perform these steps now.</p>
 
@@ -118,10 +113,6 @@ def test_netflix_df_df():
 
 
 
-
-
-
-    2/2 tests passed
 
 
 
@@ -209,12 +200,6 @@ def test_title():
     'Did you set the correct title?'
 ```
 
-
-
-
-
-
-    5/5 tests passed
 
 
 
@@ -377,12 +362,6 @@ def test_print():
 
 
 
-
-    2/2 tests passed
-
-
-
-
 ## 5. Filtering for movies!
 <p>Okay, we have our data! Now we can dive in and start looking at movie lengths. </p>
 <p>Or can we? Looking at the first five rows of our new DataFrame, we notice a column <code>type</code>. Scanning the column, it's clear there are also TV shows in the dataset! Moreover, the <code>duration</code> column we planned to use seems to represent different values depending on whether the row is a movie or a show (perhaps the number of minutes versus the number of seasons)?</p>
@@ -515,12 +494,6 @@ def test_print():
 
 
 
-
-    3/3 tests passed
-
-
-
-
 ## 6. Creating a scatter plot
 <p>Okay, now we're getting somewhere. We've read in the raw data, selected rows of movies, and have limited our DataFrame to our columns of interest. Let's try visualizing the data again to inspect the data over a longer range of time.</p>
 <p>This time, we are no longer working with aggregates but instead with individual movies. A line plot is no longer a good choice for our data, so let's try a scatter plot instead. We will again plot the year of release on the x-axis and the movie duration on the y-axis.</p>
@@ -584,13 +557,6 @@ def test_title():
     assert (re.search('Movie\s+Duration\s+by\s+Year\s+of\s+Release', title, re.IGNORECASE)), \
     'Did you give the correct title?'
 ```
-
-
-
-
-
-
-    4/4 tests passed
 
 
 
@@ -838,12 +804,6 @@ def test_print():
 
 
 
-
-    2/2 tests passed
-
-
-
-
 ## 8. Marking non-feature films
 <p>Interesting! It looks as though many of the films that are under 60 minutes fall into genres such as "Children", "Stand-Up", and "Documentaries". This is a logical result, as these types of films are probably often shorter than 90 minute Hollywood blockbuster. </p>
 <p>We could eliminate these rows from our DataFrame and plot the values again. But another interesting way to explore the effect of these genres on our data would be to plot them, but mark them with a different color.</p>
@@ -908,12 +868,6 @@ def test_colors_list():
     and use the genre to append colors to your `colors` list? The first 9 values should be 'black', and the 10th should be `blue'."
 ```
 
-
-
-
-
-
-    1/1 tests passed
 
 
 
@@ -1004,12 +958,6 @@ def test_labels():
 
 
 
-
-    5/5 tests passed
-
-
-
-
 ## 10. What next?
 <p>Well, as we suspected, non-typical genres such as children's movies and documentaries are all clustered around the bottom half of the plot. But we can't know for certain until we perform additional analyses. </p>
 <p>Congratulations, you've performed an exploratory analysis of some entertainment data, and there are lots of fun ways to develop your skills as a Pythonic data scientist. These include learning how to analyze data further with statistics, creating more advanced visualizations, and perhaps most importantly, learning more advanced ways of working with data in <code>pandas</code>. This latter skill is covered in our fantastic course <a href="www.datacamp.com/courses/data-manipulation-with-pandas">Data Manipulation with pandas</a>.</p>
@@ -1034,12 +982,6 @@ def test_example():
     such as genre of movie!"
 ```
 
-
-
-
-
-
-    1/1 tests passed
 
 
 
