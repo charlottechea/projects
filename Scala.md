@@ -12,7 +12,6 @@
 
 ```python
 # Importing pandas
-# ... YOUR CODE FOR TASK 1 ...
 import pandas as pd
 
 # Loading in the data
